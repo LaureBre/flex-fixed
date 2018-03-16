@@ -8,4 +8,4 @@ early  training on flex and a lone fixed button
 
 Bonus : Tests personnels avec une grille "à la façon de Bootstrap" et des floats :
 
-[self made grid](https://htmlpreview.github.io/?https://github.com/LaureBre/flex-fixed/blob/master/index.html)
+# [self made grid](https://cdn.rawgit.com/LaureBre/flex-fixed/02553d93/index.html)
