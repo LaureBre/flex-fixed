@@ -1,0 +1,95 @@
+*
+{
+  /* réinitialisation des margin/padding de tout le document */
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid; */
+}
+
+/* Page entière, sauf exceptions : Limite l'affichage aux 3/4 et Centre */
+#conteneur
+{
+  width: 75%;
+  margin: auto;
+}
+
+header
+{
+  margin: 30px auto 30px auto;
+  background: #aabbcc;
+  height: 200px;
+  border: 10px solid darkred;
+}
+
+header h1
+{
+  font-size: 2.5em;
+  margin: auto auto auto 60px;
+  line-height: 200px;
+}
+
+main
+{
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  height: 250px;
+  background-color: rgb(45, 97, 176);
+  border-bottom: 10px solid;
+  border-bottom-color: rgb(39, 46, 113);
+  /* pour que son enfant ait une position: absolute relativement à lui */
+}
+
+main img
+{
+  position: absolute;
+  right: 20px;
+}
+
+#bouton
+{
+  /* Position fixe, définie par espaces à droite et en bas */
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+
+  /* Arrondi & taille de la division */
+  border-radius: 100%;
+  width: 65px;
+  height: 65px;
+
+  /* Centrer horizontalement et verticalement */
+  display: flex;
+
+  /* Lignes empilées */
+  flex-direction: column;
+
+  /* Centrer dans la colonne donc verticalement */
+  justify-content: center;
+
+  /* Centrer classiquement le texte - horizontalement */
+  text-align: center;
+
+  border: 1px solid green;
+  font-size: 1.2em;
+}
+
+#bouton:hover
+{
+  background-color: rgb(69, 133, 42);
+  color: white;
+}
+
+article
+{
+  margin-top: 3em;
+  text-align: justify;
+  /* Pour montrer un flex par défaut, qui aligne les éléments sur une ligne */
+  display: flex;
+}
+
+footer
+{
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,86 @@
+*
+{
+  /* réinitialisation des margin/padding de tout le document */
+  padding: 0;
+  margin: 0;
+}
+
+#conteneur
+{
+  width: 75%;
+  margin: auto;
+}
+
+div
+{
+  margin-top: 30px;
+}
+
+#titre
+{
+  background-image: repeating-linear-gradient(45deg, rgb(249, 192, 114), magenta 15%, rgb(251, 169, 0) 35%);
+  border-bottom: 5px solid rgb(112, 30, 25);
+  height: 200px;
+}
+
+#titre p
+{
+  margin-left: 60px;
+  /* Le texte reste aligné verticalement au centre quelle que soit la hauteur de ligne */
+  line-height: 200px;
+  font-size: 2.5em;
+}
+
+#image
+{
+  background-color: rgb(251, 169, 0);
+  border-radius: 5px;
+  margin-left: auto;
+  float: right;
+}
+
+#image img
+{
+  opacity: 0.6;
+  width: 250px;
+  height: 250px;
+  margin: 20px 20px 20px auto;
+}
+
+#bouton
+{
+  background-color: magenta;
+  width: 65px;
+  height: 65px;
+  border-radius: 5% 50% 50% 50%;
+
+  /* fixe par rapport à la fenêtre et non au document */
+  position: fixed;
+  /* à 50 pixels du bord droit */
+  right: 50px;
+  /* à 50 pixels du bas de la page */
+  bottom: 50px;
+}
+
+#bouton p
+{
+  text-align: center;
+  line-height: 65px;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: white;
+}
+
+#bouton:hover
+{
+  background-color: rgb(251, 169, 0);
+}
+
+footer
+{
+  display: flex;
+  /* On a le droit de passer à la ligne : wrap ; pas le droit : no-wrap */
+  flex-wrap: wrap;
+  /* Plutôt qu'étirer pour utiliser tout l'espace, on répartit équitablement */
+  justify-content: space-between;
+}

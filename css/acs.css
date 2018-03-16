@@ -1,0 +1,75 @@
+*
+{
+  /* border: 1px solid; */
+  margin: 0;
+  padding: 0;
+  font-size: 1.38em;
+  text-align: center;
+}
+
+#conteneur
+{
+  margin: 100px auto 0 auto;
+  width: 700px;
+  text-transform: uppercase;
+}
+
+#accesscode
+{
+  display: flex;
+  justify-content: space-around;
+  height: 150px;
+  vertical-align: middle;
+  line-height: 150px;
+}
+
+#access, #code
+{
+  padding: 15px 20px 0px 10px;
+}
+
+.chevron
+{
+  color: #d31f43ff;
+  font-weight: 800;
+}
+
+#access, #code
+{
+  border-bottom: 2px solid black;
+}
+
+#code
+{
+  background-color: #d31f43ff;
+  color: white;
+  margin-right: 10px;
+}
+
+.brackets, #access, #code
+{
+  font-family: "helvetica neue";
+}
+
+#school
+{
+  font-family: "helvetica condensed";
+  font-size: 1.4em;
+  letter-spacing: 75px;
+  margin-left: 40px;
+}
+
+@font-face {
+  font-family: "helvetica neue";
+  src: url("../fonts/HelveticaNeueLTStd.otf")
+}
+
+@font-face {
+  font-family: "helvetica condensed";
+  src: url("../fonts/HelveticaNeueLTStdThinCondensed.otf")
+}
+
+@font-face {
+  font-family: "helvetica3";
+  src: url("../fonts/Helvetica3.ttf")
+}
