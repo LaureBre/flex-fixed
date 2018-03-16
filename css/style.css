@@ -1,0 +1,13 @@
+*[class^="col"]
+{
+  box-shadow: 7px 4px 12px grey inset;
+  border-top-width: 3px;
+  border-right-width: 0;
+  border-style: solid;
+  border-image: radial-gradient(red, rgba(0, 0, 0, 0)) 0 100%;
+}
+
+p
+{
+  padding: 1em;
+}

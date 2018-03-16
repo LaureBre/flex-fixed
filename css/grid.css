@@ -1,0 +1,91 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container
+{
+  width: 100%;
+}
+
+/* Retour à la ligne */
+/* Crée une division vide sans rien à droite ni à gauche */
+.row::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]
+{
+    float: left;
+    background-image: linear-gradient(60deg, rgba(33, 33, 33, 0.2), white);
+}
+
+
+/* grille à 10 colonnes */
+@media all and (max-width: 767px)
+{
+  .col-1, .col-6 {width: 20%;}
+  .col-2, .col-7 {width: 40%;}
+  .col-3, .col-8 {width: 60%;}
+  .col-4, .col-9 {width: 80%;}
+  .col-5, .col-10 {width: 100%;}
+
+  *
+  {
+    font-size: 1.02em;
+  }
+}
+
+@media all and (min-width: 768px)
+{
+  .col-1 {width: 10%;}
+  .col-2 {width: 20%;}
+  .col-3 {width: 30%;}
+  .col-4 {width: 40%;}
+  .col-5 {width: 50%;}
+  .col-6 {width: 60%;}
+  .col-7 {width: 70%;}
+  .col-8 {width: 80%;}
+  .col-9 {width: 90%;}
+  .col-10 {width: 100%;}
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px)
+{
+
+}
+
+@media all and (min-width: 1200px)
+{
+
+}
+
+
+.col-hexa-1 {width: 6.25%;}
+.col-hexa-2 {width: 12.5%;}
+.col-hexa-3 {width: 18.75%;}
+.col-hexa-4 {width: 25%;}
+.col-hexa-5 {width: 31.25%;}
+.col-hexa-6 {width: 37.5%;}
+.col-hexa-7 {width: 43.75%;}
+.col-hexa-8 {width: 50%;}
+.col-hexa-9 {width: 56.25%;}
+.col-hexa-10 {width: 62.5%;}
+.col-hexa-11 {width: 68.75%;}
+.col-hexa-12 {width: 75%;}
+.col-hexa-13 {width: 81.25%;}
+.col-hexa-14 {width: 87.5%;}
+.col-hexa-15 {width: 93.75%;}
+.col-hexa-16 {width: 100%;}
+/* grille hexadécimale */
+
+.col-1-quart {width: 25%;}
+.col-2-quart {width: 50%;}
+.col-3-quart {width: 75%;}
+.col-4-quart {width: 100%;}
+/* grille en quarts */
